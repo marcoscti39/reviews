@@ -1,0 +1,98 @@
+.person{
+    max-width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius:3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 4rem;
+
+
+}
+
+.person-photo{
+    position: relative;
+    width:min-content;
+    margin: 0 auto;
+
+
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 100;
+}
+.person-photo::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #49a6e9;
+}
+.person-photo::after{
+    content: "\201D";
+    position: absolute;
+    font-size: 4.5rem;
+    color: white;
+    width: 40px;
+    left: 0;
+    z-index: 101;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #49a6e9;
+
+}
+
+.person-name{
+    display: block;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+
+    margin-bottom: .4rem;
+    text-transform: capitalize;
+}
+
+.person-profession{
+    display: block;
+    color: #49a6e9;
+    font-size: .95rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.person-statement{
+    color: rgb(131, 131, 131);
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.person-next, .person-previous{
+    color: #49a6e9;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.person-next{
+    margin-left: 1.4rem;
+}
+
+.surprise-btn{
+    background-color: #f1f5f8;
+    color: #49a6e9;
+    border: none;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    font-size: .8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
